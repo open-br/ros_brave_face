@@ -1,0 +1,27 @@
+<launch>
+	<arg name="usb_port" default="/dev/ttyUSB0" />
+	<arg name="device" default="/dev/video0" />
+
+	<!--カメラノード起動-->
+	<node name="uvc_camera" pkg="uvc_camera" type="uvc_camera_node" output="screen">
+      <param name="device" type="string" value="$(arg device)"/>
+      <param name="width" type="int" value="640"/>
+      <param name="height" type="int" value="480"/>
+	  <remap from="/image_raw" to="/image"/>	<!-- /image_rawを/imageに変更 -->
+    </node>
+
+	<!-- joy_node -->
+	<node name="joy_node" pkg="joy" type="joy_node" output="screen"/>
+
+	<!-- OpenCV 顔認識ノード起動 -->
+	<include file="$(find opencv_apps)/launch/face_detection.launch"/> <!-- このノードはデフォルトで/imageを食べる -->
+
+	<!-- 顔位置からJoint Statesノード起動 -->
+	<node name="face2js" pkg="ros_brave_face" type="face2js" output="screen"/>
+
+	<!-- Joint StatesからDynamixel -->
+	<node name="js2dxl" pkg="ros_brave_face" type="js2dxl" output="screen"
+	 args="$(arg usb_port)">
+	</node>
+
+</launch>

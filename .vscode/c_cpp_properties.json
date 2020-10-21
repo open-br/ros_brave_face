@@ -1,0 +1,39 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/hirokazu/catkin_ws/devel/include/**",
+                "/opt/ros/melodic/include/**",
+                "/home/hirokazu/catkin_ws/src/ros_lecture/adv_lecture/include/**",
+                "/home/hirokazu/catkin_ws/src/crane_plus_arm/crane_plus_camera_calibration/include/**",
+                "/home/hirokazu/catkin_ws/src/crane_plus_arm/crane_plus_ikfast_arm_plugin/include/**",
+                "/home/hirokazu/catkin_ws/src/dynamixel-workbench/dynamixel_workbench_controllers/include/**",
+                "/home/hirokazu/catkin_ws/src/dynamixel-workbench/dynamixel_workbench_operators/include/**",
+                "/home/hirokazu/catkin_ws/src/dynamixel_workbench_ros_control/dynamixel_workbench_ros_control/include/**",
+                "/home/hirokazu/catkin_ws/src/dynamixel-workbench/dynamixel_workbench_toolbox/include/**",
+                "/home/hirokazu/catkin_ws/src/futaba_rs/include/**",
+                "/home/hirokazu/catkin_ws/src/kumaco_control/include/**",
+                "/home/hirokazu/catkin_ws/src/orochi/orochi/include/**",
+                "/home/hirokazu/catkin_ws/src/orochi/orochi_description/include/**",
+                "/home/hirokazu/catkin_ws/src/premaidai_ws/premaidai_controller/include/**",
+                "/home/hirokazu/catkin_ws/src/premaidai_ws/premaidai_simulator/premaidai_gazebo_ros_plugins/include/**",
+                "/home/hirokazu/catkin_ws/src/ros_brave_face/include/**",
+                "/home/hirokazu/catkin_ws/src/seto_scararobot/seto_scararobot/include/**",
+                "/home/hirokazu/catkin_ws/src/upperbody2/upperbody2_description/include/**",
+                "/home/hirokazu/catkin_ws/src/upperbody3/upperbody3_control/include/**",
+                "/home/hirokazu/catkin_ws/src/upperbody3/upperbody3_description/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14"
+        }
+    ],
+    "version": 4
+}
