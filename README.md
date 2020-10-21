@@ -4,6 +4,8 @@
 ## 内容
 - opencv appsを利用して、ファイバリオンが顔を視線で追いかける
 - ジョイスティックで口を開閉操作する
+- Raspberry Pi4 & ubuntu 18.04LTSで動作する
+- ros_brave_face.shをubuntu 18.04のsessionに入れることで、起動と同時に自動実行
 
 ## リンク
 
