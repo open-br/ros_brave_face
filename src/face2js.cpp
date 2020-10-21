@@ -75,7 +75,7 @@ int main(int argc, char **argv)
 
     js_robot.position[2] = M_PI * mouse / 18  ;                   // 口の動き -10度〜10度
 
-    // joint stateのパブリッシュ
+    // joint stateの配信
     pub_js.publish(js_robot);
 
     ros::spinOnce();  // コールバック関数を呼ぶ
